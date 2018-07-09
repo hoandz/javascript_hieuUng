@@ -1,0 +1,64 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.menuWp{
+	width: 100px;
+	height: 100%;
+	background: #131519;
+	position: fixed;
+	float: left;
+}
+.menuWp ul{
+	width: 100%;
+	height: 100px;
+	list-style: none;
+	padding-top: 10px;
+	cursor: pointer;
+}
+.menuWp ul li{
+	width: 100%;
+	height: 100%;
+	
+}
+.menuWp-ul-hover:hover{
+	background: black;
+	border-right: 2px solid red;
+}
+.menuWp ul li p{
+	color: #4a5261;
+	padding-right: 50px;
+}
+.icon{
+	font-size: 35px;
+	width: 100%;
+	height: 50%;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	background: #83b0b9;
+	float: left;
+}
+.main .cd-title h2{
+	text-align: center;
+	color: white;
+	margin-top: 20%;
+}
+.mautrang{
+	background: white;
+}
+.nenChayRa{
+	animation: nenra 0.4s forwards;
+}
+@-webkit-keyframes nenra{
+	from{
+		transform: translateX(-100%);
+		opacity: 0;
+	}to{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}

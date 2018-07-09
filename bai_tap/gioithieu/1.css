@@ -1,0 +1,25 @@
+.khoi{
+	background: red;
+	width: 100px;
+	height: 60px;
+}
+.chuyendong{
+	animation: chaysang 1s forwards;
+}
+@-webkit-keyframes chaysang{
+	from{
+		transform: translateX(0px);
+		}to{
+			transform: translateX(200px);
+		}
+}
+.dixuong{
+	animation: chayxuong 1s forwards;
+}
+@-webkit-keyframes chayxuong{
+	from{
+		transform: translateX(200px) translateY(0px);
+		}to{
+		transform: translateX(200px) translateY(300px);
+	}
+}

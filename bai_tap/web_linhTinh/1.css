@@ -1,0 +1,292 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.Menu {
+    width: 100%;
+    height: 330px;
+    background-image: url('img/backgroundMenu.jpg');
+    position: relative;
+}
+
+
+/*iconMenu*/
+
+.header {
+    margin-top: 30px;
+}
+
+.burger {
+    display: inline-block;
+    border: 0;
+    background: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 4px solid currentColor;
+    width: 28px;
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
+}
+
+.burger:before {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+    display: none;
+}
+
+.burger-check:checked~.burger {
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.8s ease-in-out;
+    -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+
+.burger-check:checked~.burger:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    color: #ff5200;
+}
+
+.burger-check:checked~.burger:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    color: #ff5200;
+}
+
+
+/*End iconMenu*/
+
+
+/*phan trong menu*/
+
+.burger-check:checked~.Chil_menu {
+    height: 200px;
+    transition: 0.6s;
+}
+
+.Chil_menu {
+    width: 28px;
+    height: 0px;
+    transition: 0.6s;
+    overflow: hidden;
+}
+
+.Chil_menu div {
+    width: 100%;
+    height: 30px;
+    margin-top: 22px;
+}
+
+.Chil_menu div i {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.Chil_menu div i:hover {
+    color: #ff5200;
+    transition: 0.4s;
+}
+
+
+/*End phan trong menu*/
+
+
+/*Share*/
+
+.share {
+    float: right;
+    position: relative;
+}
+
+.label {
+    background: red;
+    height: 28px;
+    border-radius: 1rem;
+    font-size: 13px;
+    opacity: 1;
+    float: right;
+    line-height: 22.5px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.label:hover {
+    opacity: 0;
+    transition: 1s;
+}
+
+.iconFb {
+    width: 9px;
+    height: 28px;
+    background: blue;
+    position: absolute;
+}
+
+.iconGG {
+    width: 9px;
+    height: 28px;
+    background: red;
+    position: absolute;
+}
+
+.iconIG {
+    width: 9px;
+    height: 28px;
+    background: orange;
+    position: absolute;
+}
+
+
+/*End Share*/
+
+
+/*Noi dung*/
+
+.noidung {
+    min-height: 200px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.post {
+    width: 350px;
+    height: 300px;
+    margin-top: 50px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    overflow-y: hidden;
+    
+}
+/*Trang thai binh thuong cua thang post*/
+.anhBaiViet{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    transition: 0.4s;
+}
+.anhBaiViet a img{
+    width: 100%;
+    height: 100%;
+}
+.titleBaiViet{
+    width: 100%;
+    height: 110px;
+    background: #2c3f52;
+    position: absolute;
+    bottom: -110px;
+    transition: 0.4s;
+}
+/* End Trang thai binh thuong cua thang post*/
+/*Trang thai sau khi hover*/
+.post:hover .anhBaiViet{
+    top: -110px;
+}
+.post:hover .titleBaiViet{
+    bottom: 0px;
+}
+/*End Trang thai sau khi hover*/
+.titleBaiViet a h3{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-weight: bold;
+    padding-left: 10px;
+
+}
+.titleBaiViet a{
+    text-decoration: none;
+}
+.titleBaiViet a h3:hover{
+    color: #f84646;
+    transition: 0.4s;
+}
+.titleBaiViet p{
+	color: white;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.titleBaiViet button{
+    border: none;
+    background: #ed4e6e;
+    color: white;
+    padding: 5px;
+    float: right;
+    margin-right: 13px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.titleBaiViet button:hover{
+    background: #f56b87;
+}
+.post:hover  .titleBaiViet h3{
+    opacity: none;
+    animation: sangPhai 1s ease forwards;
+}
+@-webkit-keyframes sangPhai{
+    from{
+        transform: translateX(-50px);
+        opacity: 0
+        }to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.post:hover  .titleBaiViet p{
+    opacity: none;
+    animation: sangPhai 1.6s ease forwards;
+}
+.post:hover  .titleBaiViet button{
+    opacity: 0;
+    animation: diLen 1s ease forwards;
+}
+@-webkit-keyframes diLen{
+    from{
+        transform: translateY(50px);
+        opacity: 0
+        }to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/*end noi dung*/

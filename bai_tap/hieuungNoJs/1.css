@@ -1,0 +1,13 @@
+.container{
+	position: relative;
+	display: inline-block;
+}
+.container input[type=radio]{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+}

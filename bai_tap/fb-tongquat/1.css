@@ -1,0 +1,50 @@
+.thanhxanh {
+    height: 40px;
+    background: #4267B2;
+    padding-left: 700px;
+}
+
+._1khoi {
+    float: left;
+    margin-top: 10px;
+}
+
+.dehienthi {
+    position: absolute;
+    width: 200px;
+    font-size: 13px;
+    transition: 0.4s;
+    margin-top: -1px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.declick {
+    padding: 10px 16px;
+    transition: 0.4s;
+    margin-top:  -10px;
+}
+
+.declick i.fa {
+    font-size: 19px;
+    cursor:  pointer;
+}
+
+.dehienthi:after {
+    content: "";
+    position:  absolute;
+    top: -19px;
+    width: 10px;
+    height: 0;
+    border: 10px solid #ff000000;
+    border-bottom-color: white;
+    right: 166px;
+    transition: 0.4s;
+}
+.doimauicon {
+    color: white;
+}
+.ra{
+    opacity: 1;
+    visibility: visible;
+}

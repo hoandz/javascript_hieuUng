@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/baitap1.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>COMMENT BOX</h1>
+        <!---Wrap-->
+        <div id="wrap">
+            <!-- Hien thi comment o day -->
+            <div id="box">
+                <div class="comment_1">
+                    <div class="ten">
+                        <div id="ten"></div>
+                    </div>
+                    <div class="comment">
+                        <div id="noidung"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End hien thi comment -->
+            <!--Form Start-->
+            <div id='form'>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="" method="POST" id="commentform">
+                            <div id="comment-name" class="form-row">
+                                <input type="text" placeholder="Name" name="dname" id="name">
+                            </div>
+                            <div id="comment-message" class="form-row">
+                                <textarea name="comment" placeholder="Comment" id="comment"></textarea>
+                            </div>
+                            <a href="#">
+                                <input type="button" name="dsubmit" id="commentSubmit" value="Send">
+                            </a>
+                            <select class="selectpicker" id="picker">
+                                <option>Append</option>
+                                <option>Prepend</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Script -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/baitap1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- End Script -->
+</body>
+
+</html>
