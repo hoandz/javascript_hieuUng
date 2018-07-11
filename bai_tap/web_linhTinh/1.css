@@ -7,17 +7,15 @@ body {
 }
 
 .content {
-    width: 100%;
-    height: 100%;
+    min-height: 100%;
+    position: relative;
 }
-
 .Menu {
     width: 100%;
     height: 330px;
     background-image: url('img/backgroundMenu.jpg');
     position: relative;
 }
-
 
 /*iconMenu*/
 
@@ -95,7 +93,80 @@ body {
 
 /*End iconMenu*/
 
-
+/*Social Facebook google*/
+.box-container{
+    display: inline-block;
+    float: right;
+}
+.iconSub{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+.iconSub i{
+    font-size: 25px;
+    line-height: 30px;
+    transition: 0.5s;
+    color: #c8c977f5;
+}
+.social-thump{
+    display: inline-block;
+}
+.icon{
+    display: inline-block;
+    width: 10px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0;
+}
+.icon i{
+    color: white;
+    margin: 0 auto;
+    line-height: 30px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.box-container:hover .iconSub i{
+    color: #b1b239f5;
+}
+.box-container:hover .icon{
+    margin-right: 20px;
+    opacity: 1;
+}
+.fb{
+    transition-delay: 0.3s;
+}
+.gg{
+    transition-delay: 0.2s;
+}
+.ig{
+    transition-delay: 0.1s;
+}
+.box-container:hover .fb{
+    transition-delay: 0.5s;
+}
+.box-container:hover .gg{
+    transition-delay: 0.4s;
+}
+.box-container:hover .ig{
+    transition-delay: 0.3s;    
+}
+.fb i:hover{
+    color: #638bdc;
+}
+.gg i:hover{
+    color: #df736b;
+}
+.ig i:hover{
+    color: #db678a;
+}
+/*end Social facebook google*/
 /*phan trong menu*/
 
 .burger-check:checked~.Chil_menu {
@@ -126,77 +197,40 @@ body {
     color: #ff5200;
     transition: 0.4s;
 }
-
+.bannerTitle h1{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+}
 
 /*End phan trong menu*/
 
-
-/*Share*/
-
-.share {
-    float: right;
-    position: relative;
+/*Phan layout*/
+.phanLayout{
+    height: 60px;
 }
-
-.label {
-    background: red;
-    height: 28px;
-    border-radius: 1rem;
-    font-size: 13px;
-    opacity: 1;
-    float: right;
-    line-height: 22.5px;
-    cursor: pointer;
-    position: absolute;
-}
-
-.label:hover {
-    opacity: 0;
-    transition: 1s;
-}
-
-.iconFb {
-    width: 9px;
-    height: 28px;
-    background: blue;
-    position: absolute;
-}
-
-.iconGG {
-    width: 9px;
-    height: 28px;
-    background: red;
-    position: absolute;
-}
-
-.iconIG {
-    width: 9px;
-    height: 28px;
-    background: orange;
-    position: absolute;
-}
-
-
-/*End Share*/
-
-
+/*End Phan Layout*/
 /*Noi dung*/
-
 .noidung {
-    min-height: 200px;
-    overflow: hidden;
-    padding-bottom: 100px;
+    overflow: auto;
+    padding-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .post {
     width: 350px;
     height: 300px;
-    margin-top: 50px;
+    margin: 10px;
     cursor: pointer;
     position: relative;
-    display: inline-block;
     overflow-y: hidden;
-    
 }
 /*Trang thai binh thuong cua thang post*/
 .anhBaiViet{
@@ -290,3 +324,20 @@ body {
     }
 }
 /*end noi dung*/
+/*Footer*/
+.footer{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: gray;
+}
+.footer p{
+    line-height: 100px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+}
+/*End Footer*/
