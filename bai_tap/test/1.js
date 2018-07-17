@@ -18,6 +18,12 @@
 // 		});
 // 	}
 // });
-$( "#header-plugin" ).load( "https://vivinantony.github.io/header-plugin/", function() {
-	$("a.back-to-link").attr("href", "http://blog.thelittletechie.com/2015/05/different-social-nav-styles.html#tlt")  
-});
+// $( "#header-plugin" ).load( "https://vivinantony.github.io/header-plugin/", function() {
+// 	$("a.back-to-link").attr("href", "http://blog.thelittletechie.com/2015/05/different-social-nav-styles.html#tlt")  
+// });
+$(function(){
+	$('.nut').on('click', function(){
+		// $('.content').toggleClass('content2');
+		// $('.contentMenu').toggleClass('menutrai');
+	});
+})

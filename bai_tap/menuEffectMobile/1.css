@@ -1,0 +1,152 @@
+.Menu {
+    width: 100%;
+    height: 330px;
+    background-image: url('img/backgroundMenu.jpg');
+    position: relative;
+}
+.header {
+    margin-top: 30px;
+    background: gray;
+}
+.burger {
+    display: inline-block;
+    border: 0;
+    background: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 4px solid currentColor;
+    width: 28px;
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
+}
+
+.burger:before {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+    display: none;
+}
+
+.burger-check:checked~.burger {
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.8s ease-in-out;
+    -webkit-transition: border-bottom 0.8s ease-in-out;
+    color: black;
+}
+
+.burger-check:checked~.burger:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    color: black;
+}
+
+.burger-check:checked~.burger:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    color: black;
+}
+
+/*Social Facebook google*/
+.box-container{
+    display: inline-block;
+    float: right;
+}
+.iconSub{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+.iconSub i{
+    font-size: 25px;
+    line-height: 30px;
+    transition: 0.5s;
+    color: #c8c977f5;
+}
+.social-thump{
+    display: inline-block;
+}
+.icon{
+    display: inline-block;
+    width: 10px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0;
+}
+.icon i{
+    color: white;
+    margin: 0 auto;
+    line-height: 30px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.box-container:hover .iconSub i{
+    color: #b1b239f5;
+}
+.box-container:hover .icon{
+    margin-right: 20px;
+    opacity: 1;
+}
+.fb{
+    transition-delay: 0.3s;
+}
+.gg{
+    transition-delay: 0.2s;
+}
+.ig{
+    transition-delay: 0.1s;
+}
+.box-container:hover .fb{
+    transition-delay: 0.5s;
+}
+.box-container:hover .gg{
+    transition-delay: 0.4s;
+}
+.box-container:hover .ig{
+    transition-delay: 0.3s;    
+}
+.fb i:hover{
+    color: #638bdc;
+}
+.gg i:hover{
+    color: #df736b;
+}
+.ig i:hover{
+    color: #db678a;
+}
+/*end Social facebook google*/

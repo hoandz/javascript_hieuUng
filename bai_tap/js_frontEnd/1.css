@@ -73,3 +73,14 @@ li.list-group-item {
 .dichphai{
     transform: translateX(300px);
 }
+.box{
+    width: 0px;
+    height: 20px;
+    border-top: 2px solid red;
+    transition: 0.8s;
+    margin: 0 auto;
+    top: -20px;
+}
+.boxdai{
+    width: 200px;
+}

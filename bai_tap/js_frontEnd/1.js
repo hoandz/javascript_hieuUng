@@ -6,13 +6,8 @@ $(function(){
 	var khoito = $(".noidungto");
 	//khi click vao nut xanh
 	nut.on("click", function(){
-		den.addClass('len');
 		//cho ca khoi to dich sang phai
-		khoito.addClass('dichphai');
+		khoito.toggleClass('dichphai');
 	})
-	den.on("click", function(){
-		den.removeClass('len');
-		//cho ca khoi to dich sang phai
-		khoito.removeClass('dichphai');
-	})
+	$('.box').addClass('boxdai');
 })

@@ -4,11 +4,67 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    transition: 0.4s;
 }
-
 .content {
     min-height: 100%;
     position: relative;
+    transition: 0.4s;
+}
+.content2{
+    transform: scale(0.94,0.98);
+    position: fixed;
+    box-shadow: 0 10px 30px 0 #b2b2b238, 0 10px 30px 0 #3a3131;
+    left: 0;
+    right: 0;
+}
+.contentMenu{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #333145 0%, #b8333ef7 100%);
+    transition: 0.4s;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+.nut{
+    color: white;
+    float: right;
+    padding: 20px;
+}
+.contentMenu i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.contentMenu ul{
+    display: block;
+    padding: 0;
+    list-style: none;
+    opacity: 0.9;
+    transition: 0.4s;
+    margin: 40px;
+}
+.contentMenu ul li{
+    color: #dfe5eb;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.contentMenu ul li i{
+    padding-right: 10px;
+}
+.contentMenu ul li:hover{
+    color:  #59e9df;
+}
+.contentMenu ul .sep{
+    margin-top: 7px;
+    padding-top: 14px;
+    border-top: 1px solid #6b7b8d;
+}
+.menutrai{
+    transform: translateX(-100%);
+    background: linear-gradient(to bottom, #333145 0%, #b8333ef7 100%);
 }
 .Menu {
     width: 100%;
@@ -19,10 +75,148 @@ body {
 
 /*iconMenu*/
 
-.header {
-    margin-top: 30px;
-}
+.header_desktop {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    /*background: #cccccc36;*/
+    transition: 0.3s;
 
+}
+.header_mobile {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    /*background: #cccccc36;*/
+    transition: 0.3s;
+    display: none;
+}
+.menu1{
+    width: 15%;
+    height: 80px;
+    float: right;
+}
+.menu1 i{
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.doiMauHeader{
+    background: #282828c2;
+    transition: 0.6s;
+    z-index: 99;
+}
+.logo{
+    width: 20%;
+    height: 80px;
+    display: inline-block;
+    float: left;
+}
+.logo h2{
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+    opacity: none;
+}
+.social{
+    width: 20%;
+    height: 80px;
+    float: right;
+}
+.menuTitle{
+    width: 60%;
+    height: 80px;
+    float: left;
+    line-height: 80px;
+}
+.menuTitle ul li{
+    list-style: none;
+    padding-right: 15px;
+    display: inline-block;
+    line-height: 80px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.menuTitle ul li:hover{
+    color: #dbd0d0;
+}
+/*Social Facebook google*/
+.box-container{
+    display: inline-block;
+    float: right;
+    
+}
+.iconSub{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-top: 25px;
+}
+.iconSub i{
+    font-size: 25px;
+    line-height: 30px;
+    transition: 0.5s;
+    color: #c8c977f5;
+}
+.social-thump{
+    display: inline-block;
+    line-height: 80px;
+}
+.icon{
+    display: inline-block;
+    width: 10px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0;
+}
+.icon i{
+    color: white;
+    margin: 0 auto;
+    line-height: 30px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.box-container:hover .iconSub i{
+    color: #b1b239f5;
+}
+.box-container:hover .icon{
+    margin-right: 20px;
+    opacity: 1;
+}
+.fb{
+    transition-delay: 0.3s;
+}
+.gg{
+    transition-delay: 0.2s;
+}
+.ig{
+    transition-delay: 0.1s;
+}
+.box-container:hover .fb{
+    transition-delay: 0.5s;
+}
+.box-container:hover .gg{
+    transition-delay: 0.4s;
+}
+.box-container:hover .ig{
+    transition-delay: 0.3s;    
+}
+.fb i:hover{
+    color: #638bdc;
+}
+.gg i:hover{
+    color: #df736b;
+}
+.ig i:hover{
+    color: #db678a;
+}
+/*end Social facebook google*/
 .burger {
     display: inline-block;
     border: 0;
@@ -68,6 +262,7 @@ body {
     border-bottom: 4px solid transparent;
     transition: border-bottom 0.8s ease-in-out;
     -webkit-transition: border-bottom 0.8s ease-in-out;
+    color: white
 }
 
 .burger-check:checked~.burger:before {
@@ -77,7 +272,7 @@ body {
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    color: #ff5200;
+    color: white
 }
 
 .burger-check:checked~.burger:after {
@@ -87,7 +282,7 @@ body {
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    color: #ff5200;
+    color: white;
 }
 
 
@@ -168,8 +363,8 @@ body {
 }
 /*end Social facebook google*/
 /*phan trong menu*/
-
-.burger-check:checked~.Chil_menu {
+/*  Chua can dung toi no*/
+/*.burger-check:checked~.Chil_menu {
     height: 200px;
     transition: 0.6s;
 }
@@ -196,7 +391,10 @@ body {
 .Chil_menu div i:hover {
     color: #ff5200;
     transition: 0.4s;
-}
+}*/
+/* End Chua can dung toi no*/
+
+
 .bannerTitle h1{
     text-transform: uppercase;
     color: white;
@@ -207,7 +405,19 @@ body {
     text-align: center;
     cursor: pointer;
 }
-
+/*.menuTitle ul li{
+    list-style: none;
+    display: inline-block;
+    padding:0 0 15px 15px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.menuTitle ul li:hover{
+    color: #ccc;
+}*/
 /*End phan trong menu*/
 
 /*Phan layout*/
@@ -326,7 +536,7 @@ body {
 /*end noi dung*/
 /*Footer*/
 .footer{
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -334,10 +544,27 @@ body {
     background: gray;
 }
 .footer p{
-    line-height: 100px;
+    line-height: 80px;
     color: white;
     text-align: center;
     cursor: pointer;
     margin: 0;
 }
 /*End Footer*/
+
+/* RESPONSIVE CSS*/
+    @media only screen and (max-width: 850px) {
+        .menuTitle{
+            display: none;
+        }
+        .social{
+            display: none;
+        }
+        .header_desktop{
+            display: none;
+        }
+        .header_mobile{
+            display: inline;
+        }
+}
+/* END RESPONSIVE CSS*/
