@@ -1,0 +1,338 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Menu {
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+.content {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    transition: 0.4s;
+    overflow: hidden;
+}
+.content2 {
+    position: fixed;
+}
+.header_desktop {
+    width: 100%;
+    height: 80px;
+    background: black;
+    transition: 0.3s;
+    position: fixed;
+}
+
+.header_mobile {
+    width: 100%;
+    height: 80px;
+    background: black;
+    transition: 0.3s;
+    display: none;
+    position: fixed;
+}
+.menu1 {
+    width: 15%;
+    height: 80px;
+    float: right;
+}
+
+.menu1 i {
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    margin-right: -19px;
+}
+
+.logo {
+    width: 20%;
+    height: 80px;
+    display: inline-block;
+    float: left;
+}
+
+.logo h2 {
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+    opacity: none;
+}
+
+.social {
+    width: 20%;
+    height: 80px;
+    float: right;
+}
+
+.menuTitle {
+    width: 60%;
+    height: 80px;
+    float: left;
+    line-height: 80px;
+}
+
+.menuTitle ul li {
+    list-style: none;
+    padding-right: 15px;
+    display: inline-block;
+    line-height: 80px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 17px;
+}
+
+.menuTitle ul li:hover {
+    color: #dbd0d0;
+}
+
+
+/*Social Facebook google*/
+
+.box-container {
+    display: inline-block;
+    float: right;
+}
+
+.iconSub {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-top: 25px;
+}
+
+.iconSub i {
+    font-size: 25px;
+    line-height: 30px;
+    transition: 0.5s;
+    color: white;
+}
+
+.social-thump {
+    display: inline-block;
+    line-height: 80px;
+}
+
+.icon {
+    display: inline-block;
+    width: 10px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.icon i {
+    color: white;
+    margin: 0 auto;
+    line-height: 30px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.box-container:hover .iconSub i {
+    color: #b1b239f5;
+}
+
+.box-container:hover .icon {
+    margin-right: 20px;
+    opacity: 1;
+}
+.twi {
+    transition-delay: 0.4s;
+}
+.fb {
+    transition-delay: 0.3s;
+}
+
+.gg {
+    transition-delay: 0.2s;
+}
+
+.ig {
+    transition-delay: 0.1s;
+}
+
+.box-container:hover .fb {
+    transition-delay: 0.5s;
+}
+
+.box-container:hover .gg {
+    transition-delay: 0.4s;
+}
+
+.box-container:hover .ig {
+    transition-delay: 0.3s;
+}
+.box-container:hover .twi {
+    transition-delay: 0.6s;
+}
+.fb i:hover {
+    color: #638bdc;
+}
+
+.gg i:hover {
+    color: #df736b;
+}
+
+.ig i:hover {
+    color: #db678a;
+}
+.twi i:hover{
+    color: #52cbff;
+}
+.nut {
+    color: white;
+    float: right;
+    padding: 20px;
+}
+
+/*end Social facebook google*
+/*Footer*/
+
+.footer {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+}
+
+.footer p {
+    line-height: 80px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+/*End Footer*/
+/*Media Responsive*/
+@media only screen and (max-width: 900px){
+    .header_desktop{
+        display: none;
+    }
+    .header_mobile{
+        display: block;
+    }
+}
+/*End Media Responsive*/
+/*Menu Trai*/
+.contentMenu {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #333145 0%, #b8333ef7 100%);
+    transition: 0.4s;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+
+.nut {
+    color: white;
+    float: right;
+    padding: 20px;
+}
+
+.contentMenu i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.contentMenu ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+    opacity: 0.9;
+    transition: 0.4s;
+    margin: 40px;
+}
+
+.contentMenu ul li {
+    color: #dfe5eb;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.contentMenu ul li i {
+    padding-right: 10px;
+}
+
+.contentMenu ul li:hover {
+    color: #59e9df;
+}
+
+.contentMenu ul .sep {
+    margin-top: 7px;
+    padding-top: 14px;
+    border-top: 1px solid #6b7b8d;
+}
+
+.menutrai {
+    transform: translateX(-100%);
+    background: linear-gradient(to bottom, #333145 0%, #b8333ef7 100%);
+}
+.doiMauHeader {
+    background: #000000c2;
+    transition: 0.6s;
+    z-index: 99;
+}
+/*End Menu Trai*/
+/*Content Element*/
+.contentElement{
+    width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    padding-bottom: 200px;
+    margin: 0 auto;
+}
+/*End Content Element*/
+
+/*Element Post*/
+.titlePost{
+    min-height: 20px;
+    overflow: hidden;
+}
+.titlePost h1{
+    cursor: pointer;
+}
+.imgPost{
+    height: 400px;
+    margin-top: 10px;
+}
+.imgPost a img{
+    width: 100%;
+    height: 100%;
+}
+.elementPost{
+    margin-top: 20px;
+}
+.elementPost p{
+    min-height: 40px;
+    overflow: hidden;
+    font-size: 17px;
+}
+/*End Element Post*/
+/*Responsive*/
+@media only screen and (max-width: 504px){
+    .imgPost{
+        height: 250px;
+    }
+}
+/*End Responsive*/

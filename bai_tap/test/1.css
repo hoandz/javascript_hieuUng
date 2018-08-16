@@ -116,7 +116,7 @@
 .box-container:hover .share{
 	opacity: 0;
 }*/
-html,body{
+/*html,body{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -131,9 +131,6 @@ html,body{
 	transform-origin: 100% 0%;
 }	
 .content2{
-    /*margin: 0 auto;
-    transform: scaleX(0.95);
-    margin-top: 25px;*/
     
 	transform: rotateY(15deg);
     box-shadow: 0 10px 30px 0 rgba(0,0,0,0.12),
@@ -195,4 +192,38 @@ html,body{
 }
 .content i{
 		font-size: 30px;
+}*/
+
+/*	NAV JS*/
+.default-nav{
+	width: 100%;
+	height: 100px;
+	background: gray;
+}
+.extra-nav{
+	width: 100%;
+	height: 100px;
+	background: blue;
+	top: 0;
+	z-index: 1000;
+	visibility: hidden;
+}
+.extra-nav p{
+	text-align: center;
+}
+
+.show-nav-effect{
+	visibility: visible;
+	position: fixed;
+	top: 0;
+	z-index: 0;
+	transition: 0.4s;
+}
+
+.hide-nav-effect{
+	visibility: visible;
+	position: fixed;
+	top: -100px;
+	z-index: 0;
+	transition: 0.4s;
 }

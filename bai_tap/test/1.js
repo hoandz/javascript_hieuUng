@@ -26,4 +26,27 @@ $(function(){
 		// $('.content').toggleClass('content2');
 		// $('.contentMenu').toggleClass('menutrai');
 	});
+	var extraNav = $('#extra-nav');
+	window.addEventListener('scroll', function(){
+		console.log(window.pageYOffset);
+		if(window.pageYOffset <= 99){
+			if (extraNav.hasClass('show-nav-effect')) {
+				extraNav.removeClass('show-nav-effect');
+				console.log("Xoa bar");
+			}
+			if (!extraNav.hasClass('hide-nav-effect')) {
+				extraNav.addClass('hide-nav-effect');
+				console.log("Them hide effect");
+			}
+		} else {
+			if (extraNav.hasClass('show-nav-effect') == false) {
+				extraNav.addClass('show-nav-effect');
+				console.log("Them bar");
+			}
+			if (extraNav.hasClass('hide-nav-effect')) {
+				extraNav.removeClass('hide-nav-effect');
+				console.log("Xoa hide effect");
+			}
+		}
+	});
 })

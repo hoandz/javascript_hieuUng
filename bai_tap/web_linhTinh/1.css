@@ -5,20 +5,21 @@ body {
     margin: 0;
     padding: 0;
     transition: 0.4s;
+    font-family: 'Roboto', sans-serif;
 }
+
 .content {
     min-height: 100%;
     position: relative;
     transition: 0.4s;
+    overflow: hidden;
 }
-.content2{
-    transform: scale(0.94,0.98);
+
+.content2 {
     position: fixed;
-    box-shadow: 0 10px 30px 0 #b2b2b238, 0 10px 30px 0 #3a3131;
-    left: 0;
-    right: 0;
 }
-.contentMenu{
+
+.contentMenu {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, #333145 0%, #b8333ef7 100%);
@@ -28,16 +29,19 @@ body {
     z-index: 9999;
     top: 0;
 }
-.nut{
+
+.nut {
     color: white;
     float: right;
     padding: 20px;
 }
-.contentMenu i{
+
+.contentMenu i {
     font-size: 30px;
     cursor: pointer;
 }
-.contentMenu ul{
+
+.contentMenu ul {
     display: block;
     padding: 0;
     list-style: none;
@@ -45,33 +49,40 @@ body {
     transition: 0.4s;
     margin: 40px;
 }
-.contentMenu ul li{
+
+.contentMenu ul li {
     color: #dfe5eb;
     padding: 10px 0;
     cursor: pointer;
     font-size: 20px;
 }
-.contentMenu ul li i{
+
+.contentMenu ul li i {
     padding-right: 10px;
 }
-.contentMenu ul li:hover{
-    color:  #59e9df;
+
+.contentMenu ul li:hover {
+    color: #59e9df;
 }
-.contentMenu ul .sep{
+
+.contentMenu ul .sep {
     margin-top: 7px;
     padding-top: 14px;
     border-top: 1px solid #6b7b8d;
 }
-.menutrai{
+
+.menutrai {
     transform: translateX(-100%);
     background: linear-gradient(to bottom, #333145 0%, #b8333ef7 100%);
 }
+
 .Menu {
     width: 100%;
     height: 330px;
-    background-image: url('img/backgroundMenu.jpg');
+    background-image: url('img/header_bg.jpg');
     position: relative;
 }
+
 
 /*iconMenu*/
 
@@ -79,57 +90,65 @@ body {
     position: fixed;
     width: 100%;
     height: 80px;
-    /*background: #cccccc36;*/
+    background: black;
     transition: 0.3s;
-
 }
+
 .header_mobile {
     position: fixed;
     width: 100%;
     height: 80px;
-    /*background: #cccccc36;*/
+    background: black;
     transition: 0.3s;
     display: none;
 }
-.menu1{
+
+.menu1 {
     width: 15%;
     height: 80px;
     float: right;
 }
-.menu1 i{
+
+.menu1 i {
     font-size: 30px;
     line-height: 40px;
     cursor: pointer;
 }
-.doiMauHeader{
-    background: #282828c2;
+
+.doiMauHeader {
+    background: #000000c2;
     transition: 0.6s;
     z-index: 99;
 }
-.logo{
+
+.logo {
     width: 20%;
     height: 80px;
     display: inline-block;
     float: left;
 }
-.logo h2{
+
+.logo h2 {
     color: white;
     line-height: 40px;
     cursor: pointer;
     opacity: none;
 }
-.social{
+
+.social {
     width: 20%;
     height: 80px;
     float: right;
 }
-.menuTitle{
+
+.menuTitle {
     width: 60%;
     height: 80px;
     float: left;
     line-height: 80px;
 }
-.menuTitle ul li{
+
+.menuTitle ul li {
     list-style: none;
     padding-right: 15px;
     display: inline-block;
@@ -137,17 +156,22 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.4s;
+    font-size: 17px;
 }
-.menuTitle ul li:hover{
+
+.menuTitle ul li:hover {
     color: #dbd0d0;
 }
+
+
 /*Social Facebook google*/
-.box-container{
+
+.box-container {
     display: inline-block;
     float: right;
-    
 }
-.iconSub{
+
+.iconSub {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -157,17 +181,20 @@ body {
     float: right;
     margin-top: 25px;
 }
-.iconSub i{
+
+.iconSub i {
     font-size: 25px;
     line-height: 30px;
     transition: 0.5s;
-    color: #c8c977f5;
+    color: white;
 }
-.social-thump{
+
+.social-thump {
     display: inline-block;
     line-height: 80px;
 }
-.icon{
+
+.icon {
     display: inline-block;
     width: 10px;
     height: 30px;
@@ -175,48 +202,57 @@ body {
     transition: 0.4s;
     opacity: 0;
 }
-.icon i{
+
+.icon i {
     color: white;
     margin: 0 auto;
     line-height: 30px;
     transition: 0.5s;
     font-size: 15px;
 }
-.box-container:hover .iconSub i{
+
+.box-container:hover .iconSub i {
     color: #b1b239f5;
 }
-.box-container:hover .icon{
+
+.box-container:hover .icon {
     margin-right: 20px;
     opacity: 1;
 }
-.fb{
-    transition-delay: 0.3s;
+
+
+.box-container:hover .twi {
+    transition-delay: 0.6s;
 }
-.gg{
-    transition-delay: 0.2s;
-}
-.ig{
-    transition-delay: 0.1s;
-}
-.box-container:hover .fb{
+.box-container:hover .fb {
     transition-delay: 0.5s;
 }
-.box-container:hover .gg{
+.box-container:hover .gg {
     transition-delay: 0.4s;
 }
-.box-container:hover .ig{
-    transition-delay: 0.3s;    
+
+.box-container:hover .ig {
+    transition-delay: 0.3s;
 }
-.fb i:hover{
+
+.fb i:hover {
     color: #638bdc;
 }
-.gg i:hover{
+
+.gg i:hover {
     color: #df736b;
 }
-.ig i:hover{
+
+.ig i:hover {
     color: #db678a;
 }
+.twi i:hover{
+    color: #52cbff;
+}
+
+
 /*end Social facebook google*/
+
 .burger {
     display: inline-block;
     border: 0;
@@ -286,14 +322,18 @@ body {
 }
 
 
+
 /*End iconMenu*/
 
+
 /*Social Facebook google*/
-.box-container{
+
+.box-container {
     display: inline-block;
     float: right;
 }
-.iconSub{
+
+.iconSub {
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -303,16 +343,19 @@ body {
     display: inline-block;
     float: right;
 }
-.iconSub i{
+
+.iconSub i {
     font-size: 25px;
     line-height: 30px;
     transition: 0.5s;
     color: #c8c977f5;
 }
-.social-thump{
+
+.social-thump {
     display: inline-block;
 }
-.icon{
+
+.icon {
     display: inline-block;
     width: 10px;
     height: 30px;
@@ -320,50 +363,73 @@ body {
     transition: 0.4s;
     opacity: 0;
 }
-.icon i{
+
+.icon i {
     color: white;
     margin: 0 auto;
     line-height: 30px;
     transition: 0.5s;
     font-size: 15px;
 }
-.box-container:hover .iconSub i{
+
+.box-container:hover .iconSub i {
     color: #b1b239f5;
 }
-.box-container:hover .icon{
+
+.box-container:hover .icon {
     margin-right: 20px;
     opacity: 1;
 }
-.fb{
-    transition-delay: 0.3s;
-}
-.gg{
-    transition-delay: 0.2s;
-}
-.ig{
-    transition-delay: 0.1s;
-}
-.box-container:hover .fb{
-    transition-delay: 0.5s;
-}
-.box-container:hover .gg{
+
+.twi {
     transition-delay: 0.4s;
 }
-.box-container:hover .ig{
-    transition-delay: 0.3s;    
+.fb {
+    transition-delay: 0.3s;
 }
-.fb i:hover{
+
+.gg {
+    transition-delay: 0.2s;
+}
+
+.ig {
+    transition-delay: 0.1s;
+}
+
+.box-container:hover .fb {
+    transition-delay: 0.5s;
+}
+
+.box-container:hover .gg {
+    transition-delay: 0.4s;
+}
+
+.box-container:hover .ig {
+    transition-delay: 0.3s;
+}
+
+.fb i:hover {
     color: #638bdc;
 }
-.gg i:hover{
+
+.gg i:hover {
     color: #df736b;
 }
-.ig i:hover{
+
+.ig i:hover {
     color: #db678a;
 }
+
+
 /*end Social facebook google*/
+
+
 /*phan trong menu*/
+
+
 /*  Chua can dung toi no*/
+
+
 /*.burger-check:checked~.Chil_menu {
     height: 200px;
     transition: 0.6s;
@@ -392,10 +458,11 @@ body {
     color: #ff5200;
     transition: 0.4s;
 }*/
+
+
 /* End Chua can dung toi no*/
 
-
-.bannerTitle h1{
+.bannerTitle h1 {
     text-transform: uppercase;
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -405,6 +472,8 @@ body {
     text-align: center;
     cursor: pointer;
 }
+
+
 /*.menuTitle ul li{
     list-style: none;
     display: inline-block;
@@ -418,14 +487,23 @@ body {
 .menuTitle ul li:hover{
     color: #ccc;
 }*/
+
+
 /*End phan trong menu*/
 
+
 /*Phan layout*/
-.phanLayout{
+
+.phanLayout {
     height: 60px;
 }
+
+
 /*End Phan Layout*/
+
+
 /*Noi dung*/
+
 .noidung {
     overflow: auto;
     padding-bottom: 200px;
@@ -434,137 +512,98 @@ body {
     justify-content: center;
 }
 
-.post {
-    width: 350px;
-    height: 300px;
-    margin: 10px;
+
+
+/*Trang thai binh thuong cua thang post*/
+.post{
     cursor: pointer;
     position: relative;
     overflow-y: hidden;
+    width: 280px;
+    height: 350px;
+    padding: 10px;
+    box-shadow: 
+        0 1px 3px rgba(0,0,0, 0.12),
+        0 1px 2px rgba(0,0,0, 0.24); 
+    margin: 0 auto;
+    margin-top: 30px;
 }
-/*Trang thai binh thuong cua thang post*/
-.anhBaiViet{
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    transition: 0.4s;
+.imgPost{
+    height: 50%;
 }
-.anhBaiViet a img{
+.imgPost img{
     width: 100%;
     height: 100%;
 }
-.titleBaiViet{
-    width: 100%;
-    height: 110px;
-    background: #2c3f52;
-    position: absolute;
-    bottom: -110px;
+.titlePost{
+    height: 50%;
+}
+.titlePost h4{
     transition: 0.4s;
-}
-/* End Trang thai binh thuong cua thang post*/
-/*Trang thai sau khi hover*/
-.post:hover .anhBaiViet{
-    top: -110px;
-}
-.post:hover .titleBaiViet{
-    bottom: 0px;
-}
-/*End Trang thai sau khi hover*/
-.titleBaiViet a h3{
-	margin: 0;
-	padding: 0;
-	color: white;
-	font-weight: bold;
-    padding-left: 10px;
-
-}
-.titleBaiViet a{
-    text-decoration: none;
-}
-.titleBaiViet a h3:hover{
-    color: #f84646;
-    transition: 0.4s;
-}
-.titleBaiViet p{
-	color: white;
-    padding-left: 10px;
-    margin-top: 10px;
-}
-.titleBaiViet button{
-    border: none;
-    background: #ed4e6e;
-    color: white;
-    padding: 5px;
-    float: right;
-    margin-right: 13px;
-    border-radius: 3px;
     font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
 }
-.titleBaiViet button:hover{
-    background: #f56b87;
+.time{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #00000082;
 }
-.post:hover  .titleBaiViet h3{
-    opacity: none;
-    animation: sangPhai 1s ease forwards;
+.titlePost h4:hover{
+    color: #2980b9;
 }
-@-webkit-keyframes sangPhai{
-    from{
-        transform: translateX(-50px);
-        opacity: 0
-        }to{
-        transform: translateX(0px);
-        opacity: 1;
-    }
+.spoiler{
+    margin-left: 10px;
 }
-.post:hover  .titleBaiViet p{
-    opacity: none;
-    animation: sangPhai 1.6s ease forwards;
-}
-.post:hover  .titleBaiViet button{
-    opacity: 0;
-    animation: diLen 1s ease forwards;
-}
-@-webkit-keyframes diLen{
-    from{
-        transform: translateY(50px);
-        opacity: 0
-        }to{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-/*end noi dung*/
+
+/* End Trang thai binh thuong cua thang post*/
+
+
+/*Trang thai sau khi hover*/
+
+
+
 /*Footer*/
-.footer{
+
+.footer {
     height: 80px;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    background: gray;
+    background: black;
 }
-.footer p{
+
+.footer p {
     line-height: 80px;
     color: white;
     text-align: center;
     cursor: pointer;
     margin: 0;
 }
+
+
 /*End Footer*/
 
-/* RESPONSIVE CSS*/
-    @media only screen and (max-width: 850px) {
-        .menuTitle{
-            display: none;
-        }
-        .social{
-            display: none;
-        }
-        .header_desktop{
-            display: none;
-        }
-        .header_mobile{
-            display: inline;
-        }
+
+/* RESPONSIVE CSS mobile*/
+
+@media only screen and (max-width: 1024px) {
+    .menuTitle {
+        display: none;
+    }
+    .social {
+        display: none;
+    }
+    .header_desktop {
+        display: none;
+    }
+    .header_mobile {
+        display: inline;
+    }
 }
+
+
 /* END RESPONSIVE CSS*/
+/*RESPONSIVE CSS Desktop*/
+/* END RESPONSIVE CSS Desktop*/
